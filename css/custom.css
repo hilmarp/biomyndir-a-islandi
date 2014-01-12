@@ -1,0 +1,9 @@
+body {
+	max-width: 1800px;
+	margin: 15px;
+}
+
+.poster {
+	width: 310px;
+	height: auto;
+}
