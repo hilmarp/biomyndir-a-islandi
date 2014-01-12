@@ -1,17 +1,13 @@
 body {
-	max-width: 1800px;
-	margin: 15px;
+	background-image: url(../img/binding_dark/binding_dark.png);
+	background-attachment: fixed;
+	color: #F5F5F5;
 }
 
-.poster {
-	width: 310px;
-	height: auto;
+h3 {
+	color: #F5F5F5;
 }
 
-.myndalisti {
-	margin-bottom: 35px;
-}
-
-.myndalisti p {
-	padding-top: 8px;
+.gefin-ut {
+	font-style: italic;
 }

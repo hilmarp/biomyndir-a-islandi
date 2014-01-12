@@ -1,17 +1,52 @@
-<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-	<li ng-repeat="mynd in myndir">
-		<div class="myndalisti">
-			<img class="poster" src="{{mynd.image}}" />
-			<p>{{mynd.title}}</p>
-			<ul>
-				<li ng-repeat="syningar in mynd.showtimes">
-					{{syningar.theater}} - 
-					<ul class="inline-list">
-						<li ng-repeat="synd in syningar.schedule">
-							{{synd}}
-						</li>
-				</li>
-			</ul>
+<div class="row" ng-repeat="mynd in myndir">
+
+	<div class="small-4 columns">
+
+		<img class="poster" src="{{mynd.image}}" />
+
+	</div>
+
+	<div class="small-8 columns">
+
+		<div class="row">
+
+			<div class="small-12 columns">
+
+				<h3>{{mynd.title}} <span class="gefin-ut">({{mynd.released}})</span></h3>
+
+			</div>
+
 		</div>
-	</li>
-</ul>
+
+		<div class="row">
+
+			<div class="small-12 columns">
+
+				<ul class="bio-listi">
+
+					<li class="bio" ng-repeat="bio in mynd.showtimes">
+
+						{{bio.theater}}
+
+						<ul class="inline-list">
+
+							<li class="syningartimar" ng-repeat="syningartimar in bio.schedule">
+
+								{{syningartimar}}
+
+							</li>
+
+						</ul>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+</div>
