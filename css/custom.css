@@ -2,12 +2,26 @@ body {
 	background-image: url(../img/binding_dark/binding_dark.png);
 	background-attachment: fixed;
 	color: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
 	color: #F5F5F5;
 }
 
+.utan-um-mynd {
+	margin-bottom: 40px;
+}
+
+.leitin {
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
 .gefin-ut {
 	font-style: italic;
+}
+
+.bio {
+	list-style-type: none;
 }

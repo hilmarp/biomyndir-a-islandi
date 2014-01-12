@@ -1,4 +1,14 @@
-<div class="row" ng-repeat="mynd in myndir">
+<div class="row leitin">
+
+	<div class="small-12 columns">
+
+		<input type="text" ng-model="myndaTitill" placeholder="Leita að kvikmynd..." />
+
+	</div>
+
+</div>
+
+<div class="row utan-um-mynd" ng-repeat="mynd in myndir | filter:myndaTitill">
 
 	<div class="small-4 columns">
 
