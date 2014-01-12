@@ -1,5 +1,17 @@
 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
 	<li ng-repeat="mynd in myndir">
-		<img class="poster" src="{{mynd.image}}" />
+		<div class="myndalisti">
+			<img class="poster" src="{{mynd.image}}" />
+			<p>{{mynd.title}}</p>
+			<ul>
+				<li ng-repeat="syningar in mynd.showtimes">
+					{{syningar.theater}} - 
+					<ul class="inline-list">
+						<li ng-repeat="synd in syningar.schedule">
+							{{synd}}
+						</li>
+				</li>
+			</ul>
+		</div>
 	</li>
 </ul>
